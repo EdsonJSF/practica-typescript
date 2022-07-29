@@ -4,7 +4,7 @@ interface Producto {
 }
 
 const telefono: Producto = {
-  desc: "telefono",
+  desc: "teléfono",
   precio: 10,
 };
 const tableta: Producto = {
@@ -14,6 +14,7 @@ const tableta: Producto = {
 
 const calculaISV = (producto: Producto[]): [number, number] => {
   let total = 0;
+  // Se puede desestructurar los argumentos como cualquier objeto o arreglo
   producto.forEach(({ precio }) => {
     total += precio;
   });
