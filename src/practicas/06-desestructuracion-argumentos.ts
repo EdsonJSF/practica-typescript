@@ -1,4 +1,4 @@
-interface Producto {
+export interface Producto {
   desc: string;
   precio: number;
 }
@@ -12,7 +12,7 @@ const tableta: Producto = {
   precio: 100,
 };
 
-const calculaISV = (producto: Producto[]): [number, number] => {
+export const calculaISV = (producto: Producto[]): [number, number] => {
   let total = 0;
   // Se puede desestructurar los argumentos como cualquier objeto o arreglo
   producto.forEach(({ precio }) => {
